@@ -45,7 +45,6 @@ Et de mettre l'URL de l'image dans le data-url.
     top: 50%;
     transform: translate(-50% , -50%);
 
-    background-size: content;
 
 }
 
@@ -128,7 +127,6 @@ data-opacity="votre opacité située de 0 à 1"
     top: 50%;
     transform: translate(-50% , -50%);
 
-    background-size: content;
 
 }
 
@@ -231,7 +229,6 @@ data-opacity="votre opacité située de 0 à 1"
     top: 50%;
     transform: translate(-50% , -50%);
 
-    background-size: content;
 }
 
 ```
