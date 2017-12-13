@@ -7,14 +7,14 @@ Plugin afin d'avoir une image en header
 
 Pour avoir une image qui fait 100% de la fenêtre,
 il vous suffit d'ajouter quelques lignes de code.
+Et de mettre l'URL de l'image dans le data-url.
 
 ### Dans votre HTML :
 
 ```
 <div class="container">
     <h1 class="title"> votre titre </h1>
-    <div class="hero">
-        <img class="hero__img" src="url de l'image " alt="le nom de image">
+    <div class="hero" data-url="URL de votre image">
     </div>
 </div>
 
@@ -45,6 +45,8 @@ il vous suffit d'ajouter quelques lignes de code.
     top: 50%;
     transform: translate(-50% , -50%);
 
+    background-size: content;
+
 
     &__img{
         position: absolute;
@@ -58,10 +60,21 @@ il vous suffit d'ajouter quelques lignes de code.
 }
 
 ```
+### Dans votre JS :
+
+```
+var url = $('.hero').data('url');
+$('.hero').css({
+    'background': "url("+ url +") no-repeat",
+});
+
+```
 
 ## Hero avec un filtre de couleur
 Afin d'avoir une image qui fait 100% de la fenêtre et un filtre qui la recouvre.
 il vous suffit d'ajouter quelques lignes de code.
+Et de mettre l'URL de l'image dans le data-url.
+
 Vous pouvez choisir à votre guise la couleur du filtre ainsi que son opacité, grâce aux data attribut dans le HTML.
 
 #### Pour la couleur:
@@ -81,8 +94,7 @@ data-opacity="votre opacité située de 0 à 1"
     <h1 class="title"> votre titre </h1>
     <div class="filter filter-block" data-colorblock="votre couleur" data-opacity="votre opacité située de 0 à 1">
     </div>
-    <div class="hero">
-        <img class="hero__img" src="url de l'image " alt="le nom de image">
+    <div class="hero" data-url="URL de votre image">
     </div>
 </div>
 
@@ -125,6 +137,8 @@ data-opacity="votre opacité située de 0 à 1"
     top: 50%;
     transform: translate(-50% , -50%);
 
+    background-size: content;
+
 
     &__img{
         position: absolute;
@@ -140,6 +154,11 @@ data-opacity="votre opacité située de 0 à 1"
 ```
 ### Dans votre JS :
 ```
+var url = $('.hero').data('url');
+$('.hero').css({
+    'background': "url("+ url +") no-repeat",
+});
+
 var colorblock = $('.filter-block').data('colorblock');
 var opacity = $('.filter').data('opacity');
 
@@ -153,6 +172,9 @@ $('.filter-block').css({
 ## Hero avec un filtre dégradé
 Afin d'avoir une image qui fait 100% de la fenêtre et un filtre dégradé qui la recouvre.
 il vous suffit d'ajouter quelques lignes de code.
+Et de mettre l'URL de l'image dans le data-url.
+
+
 Vous pouvez choisir à votre guise la composition du dégradé ainsi que l'opacité du filtre, grâce aux data attribut dans le HTML.
 
 #### Pour la couleur du dégradé:
@@ -182,8 +204,7 @@ data-opacity="votre opacité située de 0 à 1"
     <h1 class="title"> votre titre </h1>
     <div class="filter filter-gradient" data-colorfirst="votre 1ere couleur choisie" data-colorsecond="votre 2eme couleur choisie" data-direction="la direction du dégradé" data-opacity="votre opacité située de 0 à 1">
     </div>
-    <div class="hero">
-        <img class="hero__img" src="url de l'image " alt="le nom de image">
+    <div class="hero" data-url="URL de votre image">
     </div>
 </div>
 
@@ -228,6 +249,8 @@ data-opacity="votre opacité située de 0 à 1"
     top: 50%;
     transform: translate(-50% , -50%);
 
+    background-size: content;
+
 
     &__img{
         position: absolute;
@@ -243,6 +266,11 @@ data-opacity="votre opacité située de 0 à 1"
 ```
 ### Dans votre JS :
 ```
+var url = $('.hero').data('url');
+$('.hero').css({
+    'background': "url("+ url +") no-repeat",
+});
+
 var opacity = $('.filter').data('opacity');
 
 var colorfirst= $('.filter-gradient').data('colorfirst');
