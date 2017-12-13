@@ -9,6 +9,7 @@ var direction=$('.filter-gradient').data('direction');
 
 $('.hero').css({
     'background': "url("+ url +") no-repeat center",
+    'background-size' : 'cover'
 });
 
 $('.filter-block').css({
