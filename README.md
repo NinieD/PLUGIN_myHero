@@ -47,16 +47,6 @@ Et de mettre l'URL de l'image dans le data-url.
 
     background-size: content;
 
-
-    &__img{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50% , -50%);
-
-        width: 100%;
-        min-height: 100%;
-    }
 }
 
 ```
@@ -139,16 +129,6 @@ data-opacity="votre opacité située de 0 à 1"
 
     background-size: content;
 
-
-    &__img{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50% , -50%);
-
-        width: 100%;
-        min-height: 100%;
-    }
 }
 
 ```
@@ -250,17 +230,6 @@ data-opacity="votre opacité située de 0 à 1"
     transform: translate(-50% , -50%);
 
     background-size: content;
-
-
-    &__img{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50% , -50%);
-
-        width: 100%;
-        min-height: 100%;
-    }
 }
 
 ```
