@@ -8,7 +8,7 @@ var colorsecond= $('.filter-gradient').data('colorsecond');
 var direction=$('.filter-gradient').data('direction');
 
 $('.hero').css({
-    'background': "url("+ url +") no-repeat",
+    'background': "url("+ url +") no-repeat center",
 });
 
 $('.filter-block').css({

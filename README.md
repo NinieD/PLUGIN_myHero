@@ -55,7 +55,7 @@ Et de mettre l'URL de l'image dans le data-url.
 ```
 var url = $('.hero').data('url');
 $('.hero').css({
-    'background': "url("+ url +") no-repeat",
+    'background': "url("+ url +") no-repeat center",
 });
 
 ```
@@ -136,7 +136,7 @@ data-opacity="votre opacité située de 0 à 1"
 ```
 var url = $('.hero').data('url');
 $('.hero').css({
-    'background': "url("+ url +") no-repeat",
+    'background': "url("+ url +") no-repeat center",
 });
 
 var colorblock = $('.filter-block').data('colorblock');
@@ -237,7 +237,7 @@ data-opacity="votre opacité située de 0 à 1"
 ```
 var url = $('.hero').data('url');
 $('.hero').css({
-    'background': "url("+ url +") no-repeat",
+    'background': "url("+ url +") no-repeat center",
 });
 
 var opacity = $('.filter').data('opacity');
