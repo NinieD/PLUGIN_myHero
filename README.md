@@ -1,5 +1,8 @@
 # PLUGIN_myHero
 Plugin afin d'avoir une image en header
+
+#### DEMO
+[click ici](http://cepegra-labs.be/webdesign/2017/vdel/CSS_HTML/_DISCOVERY/PLUGIN_myHero/dist/)
 ## Hero simple
 
 Pour avoir une image qui fait 100% de la fenêtre,
