@@ -13,6 +13,27 @@ html {
     width: 100%;
     height: 100vh;
 }
+.link{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50% , -50%);
+
+    font-size: 16px;
+    z-index: 12;
+    a{
+        color: #fff;
+        margin: 50px;
+        border-bottom: 2px #fff solid;
+        padding: 5px;
+        &:hover{
+            color:#000;
+            text-decoration: none;
+            border-bottom: 2px #000 solid;
+        }
+    }
+
+}
 .filter{
     width: 100%;
     height: 100%;
@@ -32,8 +53,14 @@ html {
     //     opacity: 0.5;
     // }
 }
-
-
+.filter-block{
+    background-color: #000;
+    opacity: 0.5;
+}
+.filter-gradient{
+    background: linear-gradient(to right, #fc466b, #3f5efb);
+    opacity: 0.5;
+}
 .title{
     position: absolute;
     left: 50%;

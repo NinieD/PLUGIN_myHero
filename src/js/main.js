@@ -1,4 +1,13 @@
+
+$('.degrade').click(function(event) {
+    $('.filter').toggleClass('filter-gradient');
+});
+$('.color').click(function(event) {
+    $('.filter').toggleClass('filter-block');
+});
+
 //Recuperer la valeur de data
+
 var url = $('.hero').data('url');
 var colorblock = $('.filter-block').data('colorblock');
 var opacity = $('.filter').data('opacity');
