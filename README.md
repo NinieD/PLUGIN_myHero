@@ -7,7 +7,7 @@ Plugin afin d'avoir une image en header
 
 Pour avoir une image qui fait 100% de la fenêtre,
 il vous suffit d'ajouter quelques lignes de code.
-Il vous faudra rajouter ce [lien ](https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js) dans vos link du HTML.
+Il vous faudra rajouter ce [lien ](https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js) (pluginJquery) dans vos script du HTML.
 Et de mettre l'URL de l'image dans le data-url.
 
 ### Dans votre HTML :
