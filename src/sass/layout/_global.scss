@@ -1,7 +1,79 @@
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 
 * , *:before, *:after {
    box-sizing: inherit;
+}
+
+.container{
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+}
+.filter{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 5;
+
+    // &--colorblock{
+    //     background-color: #000;
+    //     opacity: 0.5;
+    // }
+    // &--gradient{
+    //     background: linear-gradient(to right, #fc466b, #3f5efb);
+    //     opacity: 0.5;
+    // }
+}
+
+
+.title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 10;
+
+    width: 35%;
+
+    color: #fff;
+    text-align: right;
+    font-size: 120px;
+    line-height: 50px;
+    font-family: 'Nixie One', cursive;
+    font-weight: normal;
+
+    strong{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 25px;
+        border: solid #FFF 3px;
+        padding: 5px 10px 5px;
+    }
+}
+.hero{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+
+
+    &__img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% , -50%);
+
+        width: 100%;
+        min-height: 100%;
+    }
 }
